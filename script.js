@@ -22,7 +22,7 @@ console.log (icecream[string]);
 
 
 function calculateOrder(numOrdered) {
-  string.split (",");
+  let string = string.split (",");
 for (
     let i = 0, numOrdered = string.length;
     i < numOrdered;
@@ -30,7 +30,10 @@ for (
 ) {
   string.push (flavor);
 }
+return numOrdered;
 }
+
+
 
 
 
