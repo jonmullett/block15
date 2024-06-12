@@ -6,36 +6,71 @@
 
 const string = ["vanilla","vanilla","vanilla","strawberry","coffee","coffee"];
 let flavor = prompt("What is your favorite flavors:", string);
+console.log (flavor);
 
-const icecream = {
-  flavor: ["vanilla", "strawberry", "coffee"],
-  numOrdered: [string],
-};
+const flavors = flavor.split (",");
+console.log (flavors);
 
-let numOrdered = 0;
+const orders = {
 
-
-console.table (icecream);
-
-console.log (icecream[string]);
-
-
-
-function calculateOrder(numOrdered) {
-  let string = string.split (",");
+}
 for (
-    let i = 0, numOrdered = string.length;
-    i < numOrdered;
-    i += 1
+  let i = 0; 
+  i < flavors.length;
+  i += 1
 ) {
-  string.push (flavor);
+//populate orders object//
+if(!orders[flavors[i]]){
+  orders[flavors[i]] = 1;
 }
-return numOrdered;
+else {
+  orders[flavors[i]] += 1;
+}
+
 }
 
 
 
+console.table (orders);
 
+
+
+
+// orders.quantity = 5;
+// console.log (orders);
+
+// const icecream = {
+//   flavor: ["vanilla", "strawberry", "coffee"],
+//   numOrdered: [string],
+// };
+
+
+// const shoe = {
+//   color: "blue",
+//   size: "10",
+// }
+
+
+
+// let numOrdered = 0;
+
+
+// console.table (icecream);
+
+// console.log (icecream[string]);
+
+
+// function calculateOrder(numOrdered) {
+//   let string = string.split (",");
+// for (
+//     let i = 0, numOrdered = string.length;
+//     i < numOrdered;
+//     i += 1
+// ) {
+//   string.push (flavor);
+// }
+// return numOrdered;
+// }
 
 // let numOrdered = string.split(",");  
 // 
@@ -45,18 +80,9 @@ return numOrdered;
 
 // let numOrdered = "0";
 
-
-
 // function stringSplit (numOrdered)
 // 
 // for (let i = 0; i< string.length; i++);
-
-
-
-
-
-
-
 
 
 // function splitString(flavors, seperator) {
@@ -74,8 +100,7 @@ return numOrdered;
 // }
 
 
-   
-
+  
 // const stringArray = string.split(",");
 //   const numbers = [1,2,3,4,5,6];
 //   for (let i = 0; i < stringArray.length; i++) {
