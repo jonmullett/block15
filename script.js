@@ -26,12 +26,13 @@ if(!orders[flavors[i]]){
 else {
   orders[flavors[i]] += 1;
 }
+console.table (orders);
 
 }
 
 
 
-console.table (orders);
+
 
 
 
